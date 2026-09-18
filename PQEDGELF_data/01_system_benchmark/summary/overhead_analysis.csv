@@ -1,0 +1,5 @@
+Comparison,Scenario comparison,TPS decrease (%),Average latency increase (%)
+Hybrid overhead in peer0_only,S2 vs S1,9.920096165750616,13.793601637462388
+Hybrid overhead in peer0_peer1,S4 vs S3,10.7327280918241,14.648858037873985
+Dual-endorser overhead in ECDSA,S3 vs S1,8.928108640492185,10.110036650673672
+Dual-endorser overhead in Hybrid,S4 vs S2,9.749689518540293,10.937607904592413

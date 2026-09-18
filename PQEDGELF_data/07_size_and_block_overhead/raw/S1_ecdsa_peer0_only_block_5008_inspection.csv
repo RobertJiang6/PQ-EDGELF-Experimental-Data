@@ -1,0 +1,6 @@
+scenario,crypto_mode,endorsement_mode,block_number_arg,block_number_header,block_file,block_file_size_bytes,tx_index,tx_id,validation_code,record_type,action_index,signer_mspid,creator_id,signature_len,is_hybrid,classical_sig_len,pq_sig_len,is_ecdsa_der,parse_state
+S1,ecdsa,peer0_only,5008,5008,block_5008.pb,3683,0,7b5455263df166a4299cc0cf7e2fde4abcd6342ad0579041500980e835163eba,-1,Envelope.Signature,-1,Org1MSP,2d2d2d2d2d424547,70,false,0,0,true,ecdsa_der
+S1,ecdsa,peer0_only,5008,5008,block_5008.pb,3683,0,7b5455263df166a4299cc0cf7e2fde4abcd6342ad0579041500980e835163eba,-1,Endorsement[0].Signature,0,Org1MSP,2d2d2d2d2d424547,70,false,0,0,true,ecdsa_der
+S1,ecdsa,peer0_only,5008,5008,block_5008.pb,3683,-1,,0,BlockMetadata.Signature[0],-1,,,70,false,0,0,true,ecdsa_der
+S1,ecdsa,peer0_only,5008,5008,block_5008.pb,3683,-1,,0,BlockMetadata.Signature[1],-1,,,71,false,0,0,true,ecdsa_der
+S1,ecdsa,peer0_only,5008,5008,block_5008.pb,3683,-1,,0,BlockMetadata.Signature[2],-1,,,71,false,0,0,true,ecdsa_der

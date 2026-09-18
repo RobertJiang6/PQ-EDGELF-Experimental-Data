@@ -1,0 +1,37 @@
+device,algorithm,run,operation,iterations,total_s,mean_us,mean_ms,file
+Raspberry Pi 4B,Falcon-512,1,keypair,170,3.018,17750.624,17.750624,PI_FALCON512_ksv_run1.txt
+Raspberry Pi 4B,Falcon-512,2,keypair,174,3.01,17300.046,17.300046,PI_FALCON512_ksv_run2.txt
+Raspberry Pi 4B,Falcon-512,3,keypair,174,3.009,17290.833,17.290833,PI_FALCON512_ksv_run3.txt
+Raspberry Pi 4B,Falcon-512,1,sign,4754,3.0,631.098,0.6310979999999999,PI_FALCON512_ksv_run1.txt
+Raspberry Pi 4B,Falcon-512,2,sign,4731,3.0,634.211,0.634211,PI_FALCON512_ksv_run2.txt
+Raspberry Pi 4B,Falcon-512,3,sign,4733,3.0,633.879,0.633879,PI_FALCON512_ksv_run3.txt
+Raspberry Pi 4B,Falcon-512,1,verify,32820,3.0,91.41,0.09140999999999999,PI_FALCON512_ksv_run1.txt
+Raspberry Pi 4B,Falcon-512,2,verify,32759,3.0,91.58,0.09158,PI_FALCON512_ksv_run2.txt
+Raspberry Pi 4B,Falcon-512,3,verify,32776,3.0,91.532,0.091532,PI_FALCON512_ksv_run3.txt
+Raspberry Pi 4B,ML-DSA-44,1,keypair,19471,3.0,154.078,0.154078,PI_MLDSA44_ksv_run1.txt
+Raspberry Pi 4B,ML-DSA-44,2,keypair,19784,3.0,151.638,0.151638,PI_MLDSA44_ksv_run2.txt
+Raspberry Pi 4B,ML-DSA-44,3,keypair,19919,3.0,150.616,0.15061600000000003,PI_MLDSA44_ksv_run3.txt
+Raspberry Pi 4B,ML-DSA-44,1,sign,7725,3.0,388.379,0.38837900000000003,PI_MLDSA44_ksv_run1.txt
+Raspberry Pi 4B,ML-DSA-44,2,sign,7736,3.0,387.808,0.387808,PI_MLDSA44_ksv_run2.txt
+Raspberry Pi 4B,ML-DSA-44,3,sign,7665,3.0,391.393,0.391393,PI_MLDSA44_ksv_run3.txt
+Raspberry Pi 4B,ML-DSA-44,1,verify,21706,3.0,138.213,0.138213,PI_MLDSA44_ksv_run1.txt
+Raspberry Pi 4B,ML-DSA-44,2,verify,21365,3.0,140.421,0.140421,PI_MLDSA44_ksv_run2.txt
+Raspberry Pi 4B,ML-DSA-44,3,verify,21588,3.0,138.968,0.13896799999999998,PI_MLDSA44_ksv_run3.txt
+VM (x86_64),Falcon-512,1,keypair,283,3.003,10610.873,10.610873,VM_FALCON512_ksv_run1.txt
+VM (x86_64),Falcon-512,2,keypair,280,3.013,10759.564,10.759564000000001,VM_FALCON512_ksv_run2.txt
+VM (x86_64),Falcon-512,3,keypair,286,3.003,10499.93,10.49993,VM_FALCON512_ksv_run3.txt
+VM (x86_64),Falcon-512,1,sign,7374,3.0,406.891,0.406891,VM_FALCON512_ksv_run1.txt
+VM (x86_64),Falcon-512,2,sign,7375,3.0,406.813,0.406813,VM_FALCON512_ksv_run2.txt
+VM (x86_64),Falcon-512,3,sign,7382,3.0,406.399,0.406399,VM_FALCON512_ksv_run3.txt
+VM (x86_64),Falcon-512,1,verify,45796,3.0,65.509,0.065509,VM_FALCON512_ksv_run1.txt
+VM (x86_64),Falcon-512,2,verify,45579,3.0,65.821,0.065821,VM_FALCON512_ksv_run2.txt
+VM (x86_64),Falcon-512,3,verify,45655,3.0,65.711,0.06571099999999999,VM_FALCON512_ksv_run3.txt
+VM (x86_64),ML-DSA-44,1,keypair,41907,3.0,71.587,0.071587,VM_MLDSA44_ksv_run1.txt
+VM (x86_64),ML-DSA-44,2,keypair,42081,3.0,71.292,0.07129200000000001,VM_MLDSA44_ksv_run2.txt
+VM (x86_64),ML-DSA-44,3,keypair,41910,3.0,71.583,0.071583,VM_MLDSA44_ksv_run3.txt
+VM (x86_64),ML-DSA-44,1,sign,14345,3.0,209.133,0.209133,VM_MLDSA44_ksv_run1.txt
+VM (x86_64),ML-DSA-44,2,sign,14157,3.0,211.912,0.21191200000000002,VM_MLDSA44_ksv_run2.txt
+VM (x86_64),ML-DSA-44,3,sign,14259,3.0,210.399,0.210399,VM_MLDSA44_ksv_run3.txt
+VM (x86_64),ML-DSA-44,1,verify,42094,3.0,71.271,0.071271,VM_MLDSA44_ksv_run1.txt
+VM (x86_64),ML-DSA-44,2,verify,41952,3.0,71.511,0.07151099999999999,VM_MLDSA44_ksv_run2.txt
+VM (x86_64),ML-DSA-44,3,verify,41903,3.0,71.594,0.07159399999999999,VM_MLDSA44_ksv_run3.txt

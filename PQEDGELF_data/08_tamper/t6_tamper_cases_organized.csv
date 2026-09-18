@@ -1,0 +1,51 @@
+group,case_id,case_name,source,signature_kind,record_type,scenario,tamper_target,tamper_method,expected_result,actual_result,passed,hybrid_sig_len,classical_sig_len,pq_sig_len,verify_error_class,notes
+A,O_05,tamper_asn1_truncate,offline_generated,Hybrid,OfflineSignature,offline,ASN.1,truncate last 8 bytes,FAIL,FAIL,true,2493,0,0,asn1_parse_error,encoded Hybrid signature truncated
+A,BS2_01_05,tamper_asn1_truncate,block_derived,Hybrid,Envelope.Signature,S2,ASN.1,truncate last 8 bytes,FAIL,FAIL,true,2493,0,0,asn1_parse_error,encoded Hybrid signature truncated
+A,BS2_02_05,tamper_asn1_truncate,block_derived,Hybrid,Endorsement.Signature[0],S2,ASN.1,truncate last 8 bytes,FAIL,FAIL,true,2493,0,0,asn1_parse_error,encoded Hybrid signature truncated
+A,BS4_01_05,tamper_asn1_truncate,block_derived,Hybrid,Envelope.Signature,S4,ASN.1,truncate last 8 bytes,FAIL,FAIL,true,2492,0,0,asn1_parse_error,encoded Hybrid signature truncated
+A,BS4_02_05,tamper_asn1_truncate,block_derived,Hybrid,Endorsement.Signature[0],S4,ASN.1,truncate last 8 bytes,FAIL,FAIL,true,2493,0,0,asn1_parse_error,encoded Hybrid signature truncated
+A,BS4_03_05,tamper_asn1_truncate,block_derived,Hybrid,Endorsement.Signature[1],S4,ASN.1,truncate last 8 bytes,FAIL,FAIL,true,2492,0,0,asn1_parse_error,encoded Hybrid signature truncated
+B,O_02,tamper_classical_sig_bitflip,offline_generated,Hybrid,OfflineSignature,offline,ClassicalSig,xor 0x01 at middle byte,FAIL,FAIL,true,2501,71,2420,classical_verify_fail,ECDSA component altered
+B,O_09,hybrid_missing_classicalsig,offline_generated,Hybrid,OfflineSignature,offline,ClassicalSig,empty ClassicalSig,FAIL,FAIL,true,2430,0,2420,missing_classical_sig,Hybrid object without classical component
+B,BS2_01_02,tamper_classical_sig_bitflip,block_derived,Hybrid,Envelope.Signature,S2,ClassicalSig,xor 0x01 at middle byte,FAIL,FAIL,true,2501,71,2420,classical_verify_fail,ECDSA component altered
+B,BS2_01_09,hybrid_missing_classicalsig,block_derived,Hybrid,Envelope.Signature,S2,ClassicalSig,empty ClassicalSig,FAIL,FAIL,true,2430,0,2420,missing_classical_sig,Hybrid object without classical component
+B,BS2_02_02,tamper_classical_sig_bitflip,block_derived,Hybrid,Endorsement.Signature[0],S2,ClassicalSig,xor 0x01 at middle byte,FAIL,FAIL,true,2501,71,2420,classical_verify_fail,ECDSA component altered
+B,BS2_02_09,hybrid_missing_classicalsig,block_derived,Hybrid,Endorsement.Signature[0],S2,ClassicalSig,empty ClassicalSig,FAIL,FAIL,true,2430,0,2420,missing_classical_sig,Hybrid object without classical component
+B,BS4_01_02,tamper_classical_sig_bitflip,block_derived,Hybrid,Envelope.Signature,S4,ClassicalSig,xor 0x01 at middle byte,FAIL,FAIL,true,2500,70,2420,classical_verify_fail,ECDSA component altered
+B,BS4_01_09,hybrid_missing_classicalsig,block_derived,Hybrid,Envelope.Signature,S4,ClassicalSig,empty ClassicalSig,FAIL,FAIL,true,2430,0,2420,missing_classical_sig,Hybrid object without classical component
+B,BS4_02_02,tamper_classical_sig_bitflip,block_derived,Hybrid,Endorsement.Signature[0],S4,ClassicalSig,xor 0x01 at middle byte,FAIL,FAIL,true,2501,71,2420,classical_verify_fail,ECDSA component altered
+B,BS4_02_09,hybrid_missing_classicalsig,block_derived,Hybrid,Endorsement.Signature[0],S4,ClassicalSig,empty ClassicalSig,FAIL,FAIL,true,2430,0,2420,missing_classical_sig,Hybrid object without classical component
+B,BS4_03_02,tamper_classical_sig_bitflip,block_derived,Hybrid,Endorsement.Signature[1],S4,ClassicalSig,xor 0x01 at middle byte,FAIL,FAIL,true,2500,70,2420,classical_verify_fail,ECDSA component altered
+B,BS4_03_09,hybrid_missing_classicalsig,block_derived,Hybrid,Endorsement.Signature[1],S4,ClassicalSig,empty ClassicalSig,FAIL,FAIL,true,2430,0,2420,missing_classical_sig,Hybrid object without classical component
+C,O_03,tamper_pq_sig_bitflip,offline_generated,Hybrid,OfflineSignature,offline,PQSig,xor 0x01 at middle byte,FAIL,FAIL,true,2501,71,2420,pq_verify_fail,ML-DSA-44 component altered
+C,O_08,hybrid_missing_pqsig,offline_generated,Hybrid,OfflineSignature,offline,PQSig,empty PQSig,FAIL,FAIL,true,77,71,0,missing_pq_sig,Hybrid object without PQ component
+C,BS2_01_03,tamper_pq_sig_bitflip,block_derived,Hybrid,Envelope.Signature,S2,PQSig,xor 0x01 at middle byte,FAIL,FAIL,true,2501,71,2420,pq_verify_fail,ML-DSA-44 component altered
+C,BS2_01_08,hybrid_missing_pqsig,block_derived,Hybrid,Envelope.Signature,S2,PQSig,empty PQSig,FAIL,FAIL,true,77,71,0,missing_pq_sig,Hybrid object without PQ component
+C,BS2_02_03,tamper_pq_sig_bitflip,block_derived,Hybrid,Endorsement.Signature[0],S2,PQSig,xor 0x01 at middle byte,FAIL,FAIL,true,2501,71,2420,pq_verify_fail,ML-DSA-44 component altered
+C,BS2_02_08,hybrid_missing_pqsig,block_derived,Hybrid,Endorsement.Signature[0],S2,PQSig,empty PQSig,FAIL,FAIL,true,77,71,0,missing_pq_sig,Hybrid object without PQ component
+C,BS4_01_03,tamper_pq_sig_bitflip,block_derived,Hybrid,Envelope.Signature,S4,PQSig,xor 0x01 at middle byte,FAIL,FAIL,true,2500,70,2420,pq_verify_fail,ML-DSA-44 component altered
+C,BS4_01_08,hybrid_missing_pqsig,block_derived,Hybrid,Envelope.Signature,S4,PQSig,empty PQSig,FAIL,FAIL,true,76,70,0,missing_pq_sig,Hybrid object without PQ component
+C,BS4_02_03,tamper_pq_sig_bitflip,block_derived,Hybrid,Endorsement.Signature[0],S4,PQSig,xor 0x01 at middle byte,FAIL,FAIL,true,2501,71,2420,pq_verify_fail,ML-DSA-44 component altered
+C,BS4_02_08,hybrid_missing_pqsig,block_derived,Hybrid,Endorsement.Signature[0],S4,PQSig,empty PQSig,FAIL,FAIL,true,77,71,0,missing_pq_sig,Hybrid object without PQ component
+C,BS4_03_03,tamper_pq_sig_bitflip,block_derived,Hybrid,Endorsement.Signature[1],S4,PQSig,xor 0x01 at middle byte,FAIL,FAIL,true,2500,70,2420,pq_verify_fail,ML-DSA-44 component altered
+C,BS4_03_08,hybrid_missing_pqsig,block_derived,Hybrid,Endorsement.Signature[1],S4,PQSig,empty PQSig,FAIL,FAIL,true,76,70,0,missing_pq_sig,Hybrid object without PQ component
+D,O_04,tamper_signed_message_bitflip,offline_generated,Hybrid,OfflineSignature,offline,signed_data,xor 0x01 at middle byte,FAIL,FAIL,true,2501,71,2420,classical_verify_fail,signed data altered
+D,BS2_01_04,tamper_signed_message_bitflip,block_derived,Hybrid,Envelope.Signature,S2,signed_data,xor 0x01 at middle byte,FAIL,FAIL,true,2501,71,2420,classical_verify_fail,signed data altered
+D,BS2_02_04,tamper_signed_message_bitflip,block_derived,Hybrid,Endorsement.Signature[0],S2,signed_data,xor 0x01 at middle byte,FAIL,FAIL,true,2501,71,2420,classical_verify_fail,signed data altered
+D,BS4_01_04,tamper_signed_message_bitflip,block_derived,Hybrid,Envelope.Signature,S4,signed_data,xor 0x01 at middle byte,FAIL,FAIL,true,2500,70,2420,classical_verify_fail,signed data altered
+D,BS4_02_04,tamper_signed_message_bitflip,block_derived,Hybrid,Endorsement.Signature[0],S4,signed_data,xor 0x01 at middle byte,FAIL,FAIL,true,2501,71,2420,classical_verify_fail,signed data altered
+D,BS4_03_04,tamper_signed_message_bitflip,block_derived,Hybrid,Endorsement.Signature[1],S4,signed_data,xor 0x01 at middle byte,FAIL,FAIL,true,2500,70,2420,classical_verify_fail,signed data altered
+E,O_06,tamper_asn1_swap_components,offline_generated,Hybrid,OfflineSignature,offline,ASN.1,swap ClassicalSig and PQSig fields,FAIL,FAIL,true,2501,2420,71,classical_verify_error,component order swapped
+E,BS2_01_06,tamper_asn1_swap_components,block_derived,Hybrid,Envelope.Signature,S2,ASN.1,swap ClassicalSig and PQSig fields,FAIL,FAIL,true,2501,2420,71,classical_verify_error,component order swapped
+E,BS2_02_06,tamper_asn1_swap_components,block_derived,Hybrid,Endorsement.Signature[0],S2,ASN.1,swap ClassicalSig and PQSig fields,FAIL,FAIL,true,2501,2420,71,classical_verify_error,component order swapped
+E,BS4_01_06,tamper_asn1_swap_components,block_derived,Hybrid,Envelope.Signature,S4,ASN.1,swap ClassicalSig and PQSig fields,FAIL,FAIL,true,2500,2420,70,classical_verify_error,component order swapped
+E,BS4_02_06,tamper_asn1_swap_components,block_derived,Hybrid,Endorsement.Signature[0],S4,ASN.1,swap ClassicalSig and PQSig fields,FAIL,FAIL,true,2501,2420,71,classical_verify_error,component order swapped
+E,BS4_03_06,tamper_asn1_swap_components,block_derived,Hybrid,Endorsement.Signature[1],S4,ASN.1,swap ClassicalSig and PQSig fields,FAIL,FAIL,true,2500,2420,70,classical_verify_error,component order swapped
+F,O_07,ecdsa_only_compatibility,offline_generated,ECDSA_only,OfflineSignature,offline,none,none,PASS,PASS,true,71,0,0,,ECDSA-only fallback verification with ECDSA signature
+F,O_10,ecdsa_only_rejects_hybrid_signature,offline_generated,Hybrid,OfflineSignature,offline,fallback,ECDSA verifier on Hybrid ASN.1,FAIL,FAIL,true,2501,71,2420,Failed verifing with opts [<nil>]: Failed unmashalling signature [failed unmashalling signature [asn1: structure error: ,ECDSA-only verification must not accept a Hybrid ASN.1 object as an ECDSA signature
+G,O_01,original_hybrid_signature,offline_generated,Hybrid,OfflineSignature,offline,none,none,PASS,PASS,true,2501,71,2420,,original signature and signed data
+G,BS2_01_01,original_hybrid_signature,block_derived,Hybrid,Envelope.Signature,S2,none,none,PASS,PASS,true,2501,71,2420,,original signature and signed data
+G,BS2_02_01,original_hybrid_signature,block_derived,Hybrid,Endorsement.Signature[0],S2,none,none,PASS,PASS,true,2501,71,2420,,original signature and signed data
+G,BS4_01_01,original_hybrid_signature,block_derived,Hybrid,Envelope.Signature,S4,none,none,PASS,PASS,true,2500,70,2420,,original signature and signed data
+G,BS4_02_01,original_hybrid_signature,block_derived,Hybrid,Endorsement.Signature[0],S4,none,none,PASS,PASS,true,2501,71,2420,,original signature and signed data
+G,BS4_03_01,original_hybrid_signature,block_derived,Hybrid,Endorsement.Signature[1],S4,none,none,PASS,PASS,true,2500,70,2420,,original signature and signed data

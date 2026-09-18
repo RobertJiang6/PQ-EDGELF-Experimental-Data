@@ -1,0 +1,4 @@
+object,count,mean_bytes,min_bytes,max_bytes
+ECDSA DER signature,100,71.02,70.00,72.00
+ML-DSA-44 signature,100,2420.00,2420.00,2420.00
+Hybrid ASN.1 signature object,100,2501.02,2500.00,2502.00
