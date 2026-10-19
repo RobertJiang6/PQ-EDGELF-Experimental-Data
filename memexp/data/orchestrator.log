@@ -1,0 +1,34 @@
+[2026-10-17T03:31:40Z] mem orchestrator start pid=3583804 plan=/home/sspu/pqedgelf-mem-20261017/plan.txt lines=12
+[2026-10-17T03:31:40Z] net_switch -> clean
+[2026-10-17T03:32:15Z] net_switch clean ready: h0=104625 h1=104625 peer0=afea375a1e36792a peer1=afea375a1e36792a want=afea375a1e36792a other_running=0 0  leader=1 orderer1=
+[2026-10-17T03:32:16Z] begin mem S1 run01 leader=1
+[2026-10-17T03:41:25Z] [done] mem S1 run01 warm_ok=100 c1_ok=1000 c16_ok=1000 
+[2026-10-17T03:41:31Z] begin mem S3 run01 leader=1
+[2026-10-17T03:52:00Z] [done] mem S3 run01 warm_ok=100 c1_ok=998 c16_ok=1000 
+[2026-10-17T03:52:05Z] net_switch -> hybrid
+[2026-10-17T03:52:50Z] net_switch hybrid ready: h0=95313 h1=95313 peer0=79eff6a365a317ba peer1=79eff6a365a317ba want=79eff6a365a317ba other_running=0 0  leader=1 orderer1=d7a90ad2afe13fe4
+[2026-10-17T03:52:51Z] begin mem S2 run01 leader=1
+[2026-10-17T04:02:54Z] [done] mem S2 run01 warm_ok=100 c1_ok=1000 c16_ok=1000 
+[2026-10-17T04:03:00Z] begin mem S4 run01 leader=1
+[2026-10-17T04:14:31Z] [done] mem S4 run01 warm_ok=100 c1_ok=1000 c16_ok=1000 
+[2026-10-17T04:14:37Z] begin mem S4 run02 leader=1
+[2026-10-17T04:26:21Z] [done] mem S4 run02 warm_ok=100 c1_ok=1000 c16_ok=1000 
+[2026-10-17T04:26:28Z] begin mem S2 run02 leader=1
+[2026-10-17T04:36:59Z] [done] mem S2 run02 warm_ok=100 c1_ok=1000 c16_ok=1000 
+[2026-10-17T04:37:04Z] net_switch -> clean
+[2026-10-17T04:37:42Z] net_switch clean ready: h0=107235 h1=107235 peer0=afea375a1e36792a peer1=afea375a1e36792a want=afea375a1e36792a other_running=0 0  leader=1 orderer1=
+[2026-10-17T04:37:43Z] begin mem S3 run02 leader=1
+[2026-10-17T04:47:55Z] [done] mem S3 run02 warm_ok=100 c1_ok=1000 c16_ok=1000 
+[2026-10-17T04:48:01Z] begin mem S1 run02 leader=1
+[2026-10-17T04:56:46Z] [done] mem S1 run02 warm_ok=100 c1_ok=1000 c16_ok=1000 
+[2026-10-17T04:56:52Z] begin mem S1 run03 leader=1
+[2026-10-17T05:05:49Z] [done] mem S1 run03 warm_ok=100 c1_ok=1000 c16_ok=1000 
+[2026-10-17T05:05:55Z] begin mem S3 run03 leader=1
+[2026-10-17T05:16:08Z] [done] mem S3 run03 warm_ok=100 c1_ok=1000 c16_ok=1000 
+[2026-10-17T05:16:13Z] net_switch -> hybrid
+[2026-10-17T05:17:00Z] net_switch hybrid ready: h0=100593 h1=100593 peer0=79eff6a365a317ba peer1=79eff6a365a317ba want=79eff6a365a317ba other_running=0 0  leader=1 orderer1=d7a90ad2afe13fe4
+[2026-10-17T05:17:01Z] begin mem S2 run03 leader=1
+[2026-10-17T05:27:07Z] [done] mem S2 run03 warm_ok=100 c1_ok=1000 c16_ok=1000 
+[2026-10-17T05:27:13Z] begin mem S4 run03 leader=1
+[2026-10-17T05:38:40Z] [done] mem S4 run03 warm_ok=100 c1_ok=1000 c16_ok=1000 
+[2026-10-17T05:38:45Z] mem orchestrator finished

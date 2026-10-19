@@ -1,0 +1,12 @@
+scenario=S2
+net=hybrid
+pprof_port=6060
+leader=1
+load_tx=900
+window1_start_ms=1792192678475
+window1_end_ms=1792192738974
+window2_start_ms=1792192743571
+window2_end_ms=1792192804120
+window3_start_ms=1792192808876
+window3_end_ms=1792192869382
+load_ok=900

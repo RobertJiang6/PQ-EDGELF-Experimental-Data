@@ -1,0 +1,13 @@
+# memory experiment 2026-10-17: 3 rounds x S1-S4, counterbalanced (ABBA by network)
+S1 run01
+S3 run01
+S2 run01
+S4 run01
+S4 run02
+S2 run02
+S3 run02
+S1 run02
+S1 run03
+S3 run03
+S2 run03
+S4 run03

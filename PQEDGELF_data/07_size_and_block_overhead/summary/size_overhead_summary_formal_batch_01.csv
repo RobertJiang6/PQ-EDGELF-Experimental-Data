@@ -1,5 +1,0 @@
-scenario,crypto_mode,endorsement_mode,mean_certificate_pem_bytes,standalone_ecdsa_sig_mean_bytes,standalone_pq_sig_mean_bytes,standalone_hybrid_sig_mean_bytes,actual_envelope_sig_mean_bytes,actual_endorsement_sig_mean_bytes,block_size_bytes,valid_tx_count_in_sampled_block
-S1,ecdsa,peer0_only,802.00,71.02,NA,NA,70.00,70.00,3683,NA
-S2,hybrid,peer0_only,3268.00,71.02,2420.00,2501.02,2501.00,2501.00,23309,NA
-S3,ecdsa,peer0_peer1,802.00,71.02,NA,NA,71.00,70.50,4583,NA
-S4,hybrid,peer0_peer1,3268.00,71.02,2420.00,2501.02,2500.00,2500.50,29112,NA

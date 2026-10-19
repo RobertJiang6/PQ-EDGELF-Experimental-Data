@@ -1,0 +1,12 @@
+scenario=S1
+net=clean
+pprof_port=6062
+leader=1
+load_tx=900
+window1_start_ms=1792193110946
+window1_end_ms=1792193171439
+window2_start_ms=1792193176048
+window2_end_ms=1792193236524
+window3_start_ms=1792193241124
+window3_end_ms=1792193301641
+load_ok=900

@@ -1,0 +1,9 @@
+PQ-EDGELF memory experiment, 2026-10-17 (VM1 /home/sspu/pqedgelf-mem-20261017).
+Purpose: peer memory of ECDSA vs hybrid, which the full re-measurement could not measure cleanly
+(pi2 has no memory cgroup; peers restart at every network switch, so memory depended on uptime).
+Same binaries, network isolation, leader check and client as the 2026-10-16 re-measurement.
+Per run: restart both peers of the measured network -> wait until both report the same height + 15 s
+-> 30 s idle -> 100-tx warm-up (c=1) -> 1000 tx at c=1 -> 10 s -> 1000 tx at c=16 -> 10 s.
+Sampling every 2 s on both peers: Go heap (alloc, inuse, sys), process RSS, goroutines, block count
+(from the operations endpoint), cgroup memory where available (pi1), VmRSS, cgroup CPU.
+Plan: 3 rounds x S1-S4, ABBA by network (plan.txt). Phase boundaries are in run_meta.txt.

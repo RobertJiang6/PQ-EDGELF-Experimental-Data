@@ -1,6 +1,0 @@
-scenario,crypto_mode,endorsement_mode,block_number_arg,block_number_header,block_file,block_file_size_bytes,tx_index,tx_id,validation_code,record_type,action_index,signer_mspid,creator_id,signature_len,is_hybrid,classical_sig_len,pq_sig_len,is_ecdsa_der,parse_state
-S2,hybrid,peer0_only,5026,5026,block_5026.pb,23309,0,dc779fb51307dfb0d6dd55f3a81f0aceeec9ca50ac9824633beea45a30ea211e,-1,Envelope.Signature,-1,Org1MSP,2d2d2d2d2d424547,2501,true,71,2420,false,hybrid_asn1
-S2,hybrid,peer0_only,5026,5026,block_5026.pb,23309,0,dc779fb51307dfb0d6dd55f3a81f0aceeec9ca50ac9824633beea45a30ea211e,-1,Endorsement[0].Signature,0,Org1MSP,2d2d2d2d2d424547,2501,true,71,2420,false,hybrid_asn1
-S2,hybrid,peer0_only,5026,5026,block_5026.pb,23309,-1,,0,BlockMetadata.Signature[0],-1,,,2501,true,71,2420,false,hybrid_asn1
-S2,hybrid,peer0_only,5026,5026,block_5026.pb,23309,-1,,0,BlockMetadata.Signature[1],-1,,,2500,true,70,2420,false,hybrid_asn1
-S2,hybrid,peer0_only,5026,5026,block_5026.pb,23309,-1,,0,BlockMetadata.Signature[2],-1,,,2501,true,71,2420,false,hybrid_asn1

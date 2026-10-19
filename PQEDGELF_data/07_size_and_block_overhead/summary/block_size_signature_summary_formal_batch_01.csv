@@ -1,5 +1,0 @@
-scenario,crypto_mode,endorsement_mode,block_number,block_file,block_size_bytes,tx_count,valid_tx_count,endorsement_sig_count,hybrid_payload_sig_count,ecdsa_der_payload_sig_count,mean_envelope_sig_len,mean_endorsement_sig_len,mean_pq_sig_len_inside_hybrid,payload_signature_bytes,all_observed_signature_bytes,metadata_signature_bytes
-S1,ecdsa,peer0_only,5008,block_5008.pb,3683,1,NA,1,0,2,70.00,70.00,NA,140,352,212
-S2,hybrid,peer0_only,5026,block_5026.pb,23309,1,NA,1,2,0,2501.00,2501.00,2420.00,5002,12504,7502
-S3,ecdsa,peer0_peer1,10008,block_10008.pb,4583,1,NA,2,0,3,71.00,70.50,NA,212,422,210
-S4,hybrid,peer0_peer1,10026,block_10026.pb,29112,1,NA,2,3,0,2500.00,2500.50,2420.00,7501,15003,7502

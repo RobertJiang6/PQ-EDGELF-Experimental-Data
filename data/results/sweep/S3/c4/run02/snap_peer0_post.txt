@@ -1,0 +1,20 @@
+ts=1792186034484
+wlan0_rx=2345844586
+wlan0_tx=830344411
+eth0_rx=0
+eth0_tx=0
+mmc_sectors_written=10677474
+mmc_sectors_read=1624678
+cg_cpu_usec=210907413
+cg_io="179:0 rbytes=0 wbytes=86028288 rios=0 wios=15837 dbytes=0 dios=0 "
+cg_mem_current=220364800
+docker_stats="94.1MB / 77.3MB | 0B / 86MB | 177MiB / 7.637GiB"
+endorser_proposals_received=6131
+gossip_comm_messages_sent=1990
+endorser_successful_proposals=6131
+ledger_block_processing_time_count=2506
+gossip_comm_messages_received=1991
+temp_mC=36024
+throttled=0x0
+root_free_kb=3375104
+load="1.17 0.94 0.77 1/435 90823"

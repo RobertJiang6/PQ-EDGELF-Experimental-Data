@@ -1,0 +1,29 @@
+scenario=S1
+net=clean
+endorsement=peer0_only
+run_id=run02
+leader=1
+idle_s=30
+warm_tx=100
+n_c1=1000
+n_c16=1000
+restart_ms=1792212481782
+ready_ms=1792212504906
+height_ready=108565
+idle_start_ms=1792212506186
+idle_end_ms=1792212536191
+warm_start_ms=1792212536194
+warm_end_ms=1792212571552
+warm_ok=100
+c1_start_ms=1792212571560
+c1_end_ms=1792212913458
+c1_ok=1000
+c16_start_ms=1792212923476
+c16_end_ms=1792212978066
+c16_ok=1000
+tail_end_ms=1792212988115
+height_end_p0=109861
+height_end_p1=109861
+leader_after=1
+pi0_end="temp_mC=36998 throttled=0x0"
+pi1_end="temp_mC=33589 throttled=0x0"

@@ -1,0 +1,7 @@
+scenario,window,total_s,blocks,proposals,tx_committed_in_window,cg_cpu_s,msp_identity_Verify_s,tryVerifyHybrid_s,VerifyHybridSignature_s,sw_CSP_Verify_s,ecdsa_Verify_s,pq_verify_go_s,liboqs_verify_cgo_s,liboqs_sign_cgo_s,cgocall_s,bft_header_receiver_s,block_sig_verifier_s,endorser_process_proposal_s,gc_bg_mark_s,proto_unmarshal_s
+S1,1,9.94,163,163,157,11.9356,3.37,0,0,3.29,3.18,0,0,0,0,1.88,2.43,0.88,0.1,0.31
+S1,2,9.41,165,165,158,11.2261,3.25,0,0,3.15,3.12,0,0,0,0,1.89,2.41,0.67,0.07,0.34
+S1,3,10.56,166,166,159,12.6336,3.73,0,0,3.65,3.56,0,0,0,0,2.08,2.6,0.92,0.12,0.31
+S2,1,12.85,149,150,143,14.7967,5.67,5.52,4.64,4.57,3.05,1.48,1.3,0.35,1.76,3.15,4.02,1.31,0.06,0.54
+S2,2,11.91,147,148,141,13.7593,5.47,5.36,4.43,4.4,3.03,1.32,1.23,0.27,1.56,2.92,3.82,1.24,0.07,0.39
+S2,3,13.09,155,154,150,15.1043,5.98,5.73,4.77,4.73,3.17,1.53,1.45,0.21,1.72,3.08,4.05,1.51,0.09,0.49

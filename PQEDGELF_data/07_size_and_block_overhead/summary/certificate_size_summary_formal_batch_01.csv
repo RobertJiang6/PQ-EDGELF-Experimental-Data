@@ -1,9 +1,0 @@
-mode,node_type,count,mean_pem_bytes,mean_der_bytes,pq_extension_count,pq_private_key_count,mean_pq_pubkey_len
-ecdsa,admin,2,800.00,549.50,0,0,NA
-ecdsa,orderer,4,797.00,547.00,0,0,NA
-ecdsa,peer,2,808.00,555.50,0,0,NA
-ecdsa,user,1,814.00,559.00,0,0,NA
-hybrid,admin,2,3266.00,2370.00,2,2,1312.00
-hybrid,orderer,4,3263.00,2368.00,4,4,1312.00
-hybrid,peer,2,3276.00,2377.50,2,2,1312.00
-hybrid,user,1,3276.00,2379.00,1,1,1312.00

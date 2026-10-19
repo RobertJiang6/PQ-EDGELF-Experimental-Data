@@ -1,7 +1,0 @@
-scenario,crypto,endorsement,peer,duration_s,tx_total,host_nic_rx_mb,host_nic_tx_mb,host_nic_total_mb,host_nic_bandwidth_kbps,host_disk_write_mb,host_disk_write_kbps,docker_net_rx_mb,docker_net_tx_mb,docker_blk_read_mb,docker_blk_write_mb,gossip_rx_delta,gossip_tx_delta,gossip_total_rate_msgs,endorser_delta,ledger_growth_blocks
-S1,ECDSA,peer0_only,peer0,328.1,1000,16.58,11.58,28.16,87.9,106.15,331.3,20.48,20.48,,20.48,670,669,4.1,0,0.0
-S2,Hybrid,peer0_only,peer0,369.2,1000,68.24,19.25,87.49,242.6,151.24,419.4,71.68,30.72,,40.96,841,840,4.6,1000,1000.0
-S3,ECDSA,peer0_peer1,peer0,364.0,1000,18.29,12.12,30.41,85.6,115.29,324.4,20.48,10.24,,30.72,740,738,4.1,0,0.0
-S3,ECDSA,peer0_peer1,peer1,364.0,1000,18.16,12.04,30.19,84.9,112.81,317.4,20.48,10.24,,,739,740,4.1,0,0.0
-S4,Hybrid,peer0_peer1,peer0,412.5,1000,74.61,20.11,94.71,235.1,159.12,395.0,81.92,30.72,0.0,61.44,935,935,4.5,1000,1000.0
-S4,Hybrid,peer0_peer1,peer1,412.5,1000,74.49,19.79,94.28,234.0,157.02,389.8,71.68,30.72,,,936,938,4.5,1000,1000.0

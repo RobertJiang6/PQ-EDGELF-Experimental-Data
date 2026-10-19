@@ -1,0 +1,29 @@
+scenario=S2
+net=hybrid
+endorsement=peer0_only
+run_id=run02
+leader=1
+idle_s=30
+warm_tx=100
+n_c1=1000
+n_c16=1000
+restart_ms=1792211188260
+ready_ms=1792211210792
+height_ready=99291
+idle_start_ms=1792211211790
+idle_end_ms=1792211241795
+warm_start_ms=1792211241798
+warm_end_ms=1792211282508
+warm_ok=100
+c1_start_ms=1792211282516
+c1_end_ms=1792211701942
+c1_ok=1000
+c16_start_ms=1792211711960
+c16_end_ms=1792211784253
+c16_ok=1000
+tail_end_ms=1792211794297
+height_end_p0=100593
+height_end_p1=100593
+leader_after=1
+pi0_end="temp_mC=36024 throttled=0x0"
+pi1_end="temp_mC=34076 throttled=0x0"

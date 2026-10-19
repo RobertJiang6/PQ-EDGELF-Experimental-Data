@@ -1,0 +1,4 @@
+phase,scenario,c,run,latency_ms,status
+system,S3,1,run04,3085,1
+resource,S3,1,run02,3131,1
+sweep,S3,4,run02,3120,1
